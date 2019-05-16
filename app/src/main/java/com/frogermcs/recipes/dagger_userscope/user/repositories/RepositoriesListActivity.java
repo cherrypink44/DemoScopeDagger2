@@ -37,7 +37,7 @@ public class RepositoriesListActivity extends BaseUserActivity {
 
     @Override
     protected void onUserComponentSetup(UserComponent userComponent) {
-        userComponent.plus(new RepositoriesListActivityComponent.RepositoriesListActivityModule(this)).inject(this);
+        userComponent.plus(new RepositoriesListActivityModule(this)).inject(this);
     }
 
     private void setupRepositoriesListView() {

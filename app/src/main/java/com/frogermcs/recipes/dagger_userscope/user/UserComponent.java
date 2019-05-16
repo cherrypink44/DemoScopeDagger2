@@ -4,6 +4,7 @@ import com.frogermcs.recipes.dagger_userscope.di.scopes.UserScope;
 import com.frogermcs.recipes.dagger_userscope.user.details.UserDetailsActivityComponent;
 import com.frogermcs.recipes.dagger_userscope.user.details.UserDetailsActivityModule;
 import com.frogermcs.recipes.dagger_userscope.user.repositories.RepositoriesListActivityComponent;
+import com.frogermcs.recipes.dagger_userscope.user.repositories.RepositoriesListActivityModule;
 
 import dagger.Subcomponent;
 
@@ -24,7 +25,7 @@ public interface UserComponent {
 
     UserDetailsActivityComponent plus(UserDetailsActivityModule module);
 
-    RepositoriesListActivityComponent plus(RepositoriesListActivityComponent.RepositoriesListActivityModule module);
+    RepositoriesListActivityComponent plus(RepositoriesListActivityModule module);
 
     LogoutManager logoutManager();
 }
